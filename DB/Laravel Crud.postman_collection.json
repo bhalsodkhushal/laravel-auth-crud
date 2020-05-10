@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "a35e6995-0e64-4d38-aa54-2f14ca13ef7e",
+		"name": "Laravel Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khushal Bhalsod\",\n\t\"email\" : \"khushal@gmail.com\",\n\t\"password\" : \"aaaa@@11\",\n\t\"password_confirmation\" : \"aaaa@@11\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"signup"
+					]
+				},
+				"description": "http://127.0.0.1:8000/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"khushal@gmail.com\",\n\t\"password\" : \"aaaa@@11\",\n\t\"remember_me\" : true\n}"
+				},
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "http://127.0.0.1:8000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjUxYmQ1MWNhYjFiODBiM2U2YmYyNGMzNDliYjQ4ZDYxMzZlN2Q5MWVlMDRiNmIwMWMyYTE4YzdiY2JkOWFiNWNkMTVkMjJhNWNmYTE2OTYiLCJpYXQiOjE1ODkwOTExOTcsIm5iZiI6MTU4OTA5MTE5NywiZXhwIjoxNjIwNjI3MTk2LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.bDuEMcNzUvE56JQWetPKAcZdUdcWDAO_8jMv8mLEKpzodoZjfq62SM6HEeItYN6jXk27H2qqg9VxQ4r-k3frl6tIZbXz46rj7rGIoKUPkVdUZ2bytJJYmawK1TtwlR2R8BQDIScHO46fRoKJM4eZdAICaubREuP2v4dRDkiA8wRBT1fGSj31kq9Mq-OJd6Gat47Lv6jdyresiSCWCXBdO0ahth_WZ8_FbBMHhH0-j8A5fMTUniHXe8IvQRD6ii-RwDvsyWMcuZt_CkPjAa897Nmg9_HrnxTl_k5zaeE2GnQozk4eb9egM1rRkUmyLyVWVGlFLUqjHwaUIPSulEs1QeKpYtY-lV_KjtaeZq8R_cPyXFQ6ob9X2PXUgOG4SE4VaR_55pEJhdJDrjL7-19e9gIp7UhPEJ1JitLf2azlID7xp1HM3AN_B5A0WBJuHm7Mj2AODGLfzqWhAiQqnEJ7C6ELv65z52N20vfaMMeZRDn7lG6QTVrRj6HyOGt_wUaaABD_kfZGOYo7q362hP3Xzr1YwF1xg0stjAOSMoi4jUB2mx4XJc8SasgTBcj-JqZgTqAb5-wByvKzIvK6bVrz_dNFQp9PKzHt3_IZxj_NnoGWTa2Bt2GKQYT_JEEZR_mW1HrxS0P3AeC6vVs7-8EDHsuILPwSQ6ZCPDvy-d21GHc",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"logout"
+					]
+				},
+				"description": "http://127.0.0.1:8000/api/auth/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWNkZDU2ZTZhYjZmOTBhNDIyNzgyNzBlYzRmMDlmZjg3NDQ0Mjg3ZDNhOGM1MWYxZGY1ZmJhNWZlOTU5ZjljNjU4ZjNjNzcxNTIzN2U3NGEiLCJpYXQiOjE1ODg4MzY3NjYsIm5iZiI6MTU4ODgzNjc2NiwiZXhwIjoxNjIwMzcyNzY2LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rtjdZHMXOEUtoqOLKZHfqqTDJXOrrwUIssDRHXbLa1OMVFDcz4xOfdeLkb761zKUagf9MKsdVFVtNAtWk796H8RcgeynMi1wehdiU2gAFQiWzlyUNZ731CyMK2dXRbs7TKDImmG8ktcOMnHJXdpJRtuH4Teh8ZRpjMopoBV64nHCYPQw_SIWXB4wHgsUSC-5hraUqZBJu5xaOb78MV0AipMPLAcfbY5g1_YpJWHh7evnAZXCdGWu6Rvp7ZqO28v0p8d8d83NWT2sPtfyxMeyo1exu1XVH8qul1w1datK8WrwnP2Tht-nyOBWWApsFjT3RFXSsja29i5l7pRaP45h1U7kMNm9JVs8eb3WkPOBcjOwmmN0zWein9EDc8XdhbzZuOXTqHGb7RrXZ4IVeEXIAnWTIDboGTdJjD7REl5DYEAfUYRpgYNlIX9pOnGIb33bxomULWEMO7oVeIgmqUjRAMpokIYu8exAcLQ2UZ9MIOezvV-wyL6fIl68OzHuVIWaTtEz2PdzS3cLRNoHjO8WdaYwSCmIEAC8j_TygUfyD0UBrj44cpoGpR2dt37EeWjfg8fY7bfJNChLtR3m85V32gtCcs1hYLA_Sh8S3U4xTx1bs-9eWpX18rmUf1CghJ609EuYozoapfSE1JHBLHi49bJ6ipy-HTRwr1LFTBqEDP0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"user"
+					]
+				},
+				"description": "http://127.0.0.1:8000/api/auth/user"
+			},
+			"response": []
+		},
+		{
+			"name": "User List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer qeyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTU5MzBhODdiMTE2NjEwMjYwZTQwNmI3ZThmYWY4NmI4Mzk5MjA1YjFiMGVkODg4ZmM5ZDI1MDg0YzIyN2Q0YjFlOGYwZTc0ZGZiZDBiN2MiLCJpYXQiOjE1ODkwOTA0NzgsIm5iZiI6MTU4OTA5MDQ3OCwiZXhwIjoxNjIwNjI2NDc4LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.EsIWmsiq4KnLTNWEkpdGrkW1LXnCi05GvbONFySVjcSlz29Ud0WeLtmTnqRZlse_kmgS48NUFdwM07CtEsp31K_eNteB_3L-wHfBmV5NXEJI43-yDyuSP9i6qLniKGPtmoLLkj4h3RrOAR3qmXDOv8PhhWcbxoIM8pYELQ0-q5FBWMt-yko0oulAJrSzWrRj2iseQJatxe0N8UMoSS60CguFZ1x2X-sJMg1WudETAL2l6JvqrBfx8LapPMt5Btmg186HfRSzN42i_nQZBlgwRjzhigCgr1eg5h2l5rA1KS3jWY3MOlmIRf_8z-jlXUHTjICuR-tNrcw_-D3ZaFN5e8QPB_M2qhKfoFpqo8IFnze41br8qLT7hl9VJGMkF5K_0zHqM-vJDzov-hES-EWe17hne4Urd52outBcfj6sCPUXjH3H8KxAwtsImjuCuEbilGeTZDcPfZSZNsOhysEZ1t3jqfYyhLku4lmgeOWi9yolVjWL4OiQcELU1yUySwT_TFyl3Eu6V1VHPkQN-4UyV_6413XzeuTaBA20s0h08vbP0FTpwHx3buV3Ir0uFPNU4sF_QEv0oDAtFfs1g5ocYWjRAqNJgnMfV3ES22rsgRNLovHP7UUJzsj-Y3-weOvDCHsIsMFBnOU7B8ZiUKGAZf_d1SFmfQLjjD4Bu9iyphQ",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/userlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"userlist"
+					]
+				},
+				"description": "http://localhost/laravel-crud/public/api/auth/userlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Department List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDE2YWU4OGVjZjRkZTA3MDg3Njc1M2ExZGIwYjE5YzFmYWYwNjIxYTVmM2U5MmE3ODc5NmMwOWM5OWRlMGY1OGY2ZDliN2JhMDI5NDUzMGIiLCJpYXQiOjE1ODkwOTEwMTcsIm5iZiI6MTU4OTA5MTAxNywiZXhwIjoxNjIwNjI3MDE3LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.uzHz5KW-eFhJxKrB2aQQbUwu4Wibk5loYRgXkkOramDnt73l-DTPF15kOqB7ge5OVnzGaowcIhC3vOtkXMhadFb9MLuB5f0AYXnnV_HavwTqlPqo_nkqwX9SJ-5_4rCOIVxHSHy4RHwTbZ0UsVG3sGk0Ij51j0DH2NslyfQQ9EFVbVlJqork16BeqPPP1qequfMv1Ab1k72gmwIDyIjtEsr6EByvjXrZ6r_Kk2FhteUjQvDoJa1TyNo3Iu8xY3L3FuIe3bBFOA_1MYZhdyG0ERAzrfCHL2zXY7EaM7CQI5aPUG755CvcZuatazx-ElDHA3LUs7ZeiuSplQA4W4UfH1EMsQECuu2s9o0AETOi4QVxaY3EjyFkbXjalZhttlLWhSGiRIKxkffXBeIZPbd3Ru2y64aDWdCHmwMLKYlADQ5gpkuU2cDvBVsndL8giRUcUiZEmNGPnn25VcBbKq5DTst-jrxnUCj_RAhaqi3gr-uLnerYHfKSzOtKkrWwCBzVfH0YJDYz2KIMY0D-UkHgxnul5AHa3GgpcHKB5XRrJQ8YTHdntNzlekvx8s2BF116AIhcFIluVVh6Uo-WQUp1edBOAYs6VN6uksVhvcEpieo6-1wLxk3gQOhMpUQaQ3j9RFiXi_9NRm-xWs8GZvxUUN5OHjDwzyJ2vjstWiBK124",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/department-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"department-list"
+					]
+				},
+				"description": "http://localhost/laravel-crud/public/api/auth/department-list"
+			},
+			"response": []
+		},
+		{
+			"name": "Employee List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmNiYjQ3MzMzNDdiMjc4MDZmNTQxZjEzMjNkYTAzNWE1Y2I1OGZiMjNkMGY1MDU5ZTdhZTgzYzQwZDZkYzMxZjczNjkzZjAyZWI5NGRmNTEiLCJpYXQiOjE1ODkwOTE1NDcsIm5iZiI6MTU4OTA5MTU0NywiZXhwIjoxNjIwNjI3NTQ3LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.n7GAsndrFJuDefXpilO3pMS4Q9lGAjOKPeO5WyrddN0ONdFaPu3Zke4GMkI2dUB6B6sY9wS8pHgeIXUSxcXa-0P9ZuXxrC3E2GMylPnXGUuSC8jbsNtJKG-NdWlN707808mt22b-lCzXYfNkdv1iBYskFlK9FwftK2uSLF8Qw6Exz4_cPfeoRrM5vKQlF62Pn_XgXMl9C0KOU-N8D_6v4dSZYw0CsWrCfuhlolF6CxdrsoT1RX41KsNSo69fd6rZ939KEHW_GPPWdjbm7UauZAydh5Pm4Q7SEoI6v6Mim7urvEwVlrFXz3WycYHeKGeB9HMydA40hrDqq3r421DyznYol7Gtv-hoLWLkTjzJysvYsS5M4qZ_yXc08e-Ii0lBDH0VI0426XsA2qI3x4vNhijpQg4Hexh3EQXdkHKKEqWQziycqHJZmNrFyurKpK7X5465iLLrSGM_vZecj66EU3lcxzUqOapW6RUnR-mMrz96hk60al0FnVBg29Eu8jJNvq_Yn6x9FJ_tFMJNow__2zrX4etAlMUoXMmGMIaNN-tYEdM718VS14G-1H0JMhb8ZcGtA59vJpR5vauyy73162jssaXi06YRC6IcG_xHT1vpbxESW-3eFIPnu-xvxsd0cgsujF056-vldsiflnHpVSrtV9mqGU9vaN1yfiPB_XM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/employee-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"employee-list"
+					]
+				},
+				"description": "http://localhost/laravel-crud/public/api/auth/employee-list"
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmNiYjQ3MzMzNDdiMjc4MDZmNTQxZjEzMjNkYTAzNWE1Y2I1OGZiMjNkMGY1MDU5ZTdhZTgzYzQwZDZkYzMxZjczNjkzZjAyZWI5NGRmNTEiLCJpYXQiOjE1ODkwOTE1NDcsIm5iZiI6MTU4OTA5MTU0NywiZXhwIjoxNjIwNjI3NTQ3LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.n7GAsndrFJuDefXpilO3pMS4Q9lGAjOKPeO5WyrddN0ONdFaPu3Zke4GMkI2dUB6B6sY9wS8pHgeIXUSxcXa-0P9ZuXxrC3E2GMylPnXGUuSC8jbsNtJKG-NdWlN707808mt22b-lCzXYfNkdv1iBYskFlK9FwftK2uSLF8Qw6Exz4_cPfeoRrM5vKQlF62Pn_XgXMl9C0KOU-N8D_6v4dSZYw0CsWrCfuhlolF6CxdrsoT1RX41KsNSo69fd6rZ939KEHW_GPPWdjbm7UauZAydh5Pm4Q7SEoI6v6Mim7urvEwVlrFXz3WycYHeKGeB9HMydA40hrDqq3r421DyznYol7Gtv-hoLWLkTjzJysvYsS5M4qZ_yXc08e-Ii0lBDH0VI0426XsA2qI3x4vNhijpQg4Hexh3EQXdkHKKEqWQziycqHJZmNrFyurKpK7X5465iLLrSGM_vZecj66EU3lcxzUqOapW6RUnR-mMrz96hk60al0FnVBg29Eu8jJNvq_Yn6x9FJ_tFMJNow__2zrX4etAlMUoXMmGMIaNN-tYEdM718VS14G-1H0JMhb8ZcGtA59vJpR5vauyy73162jssaXi06YRC6IcG_xHT1vpbxESW-3eFIPnu-xvxsd0cgsujF056-vldsiflnHpVSrtV9mqGU9vaN1yfiPB_XM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"employee_name\" : \"Vikas Shah\",\n\t\"company_name\" : \"Bright Solution\",\n\t\"mobile\" : \"8855445588\",\n\t\"city\" : \"Pune\",\n\t\"email\" : \"vikas@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/laravel-crud/public/api/auth/employee-add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-crud",
+						"public",
+						"api",
+						"auth",
+						"employee-add"
+					]
+				},
+				"description": "http://localhost/laravel-crud/public/api/auth/employee-add"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
